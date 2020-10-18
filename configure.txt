@@ -1,0 +1,11 @@
+https://blog.csdn.net/qq_36667170/article/details/79094257
+1.检查是否有SSH Key：~/.ssh或者是 ~/.ssh ls
+      ·如果电脑上有，就会显示bash: /c/Users/…/.ssh: Is a directory
+      ·如果电脑上没有，那就显示bash: /c/Users/…/.ssh: No such file or directory
+2.创建SSH  Key
+  Git Bash中输入： $ ssh-keygen -t rsa -C "你的邮箱"
+  设置成功  Your identification has been saved in /c/Users/…/.ssh/id_rsa
+            Your public key has been saved in /c/Users/…/.ssh/id_rsa.pub
+3.检查 ：~/.ssh ls
+4.添加SSH 找到id_rsa.pub，记事本打开
+5.测试SSH Key ：$ ssh -T git@github.com
